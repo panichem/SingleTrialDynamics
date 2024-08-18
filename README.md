@@ -2,7 +2,7 @@
 
 This repository contains the custom behavioral and analysis functions supporting Panichello, Jonikaitis, Oh, Zhu, Trepka, & Moore, 2024.
 
-./task/taskCode.m presents stimuli and record behavioral responses in the memory-guided saccade task. 
+./task/taskCode.m presents stimuli and records behavioral responses in the memory-guided saccade task. 
 
 ./clust/clusterMassOneSampZ.m is the core function used to identify significant epochs of above-chance confidence ('On states'), corrected for multiple comparisons, as described in Figure 4. 
 
