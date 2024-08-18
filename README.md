@@ -1,11 +1,11 @@
 # SingleTrialDynamics
 
-This repository contains core behavioral and analysis functions supporting Panichello, Jonikaitis, Oh, Zhu, Trepka, & Moore, 2024.
+This repository contains the custom behavioral and analysis functions supporting Panichello, Jonikaitis, Oh, Zhu, Trepka, & Moore, 2024.
 
-taskCode.m is the script used to present stimuli and record behavioral responses in the memory-guided saccade task. 
+./task/taskCode.m presents stimuli and record behavioral responses in the memory-guided saccade task. 
 
-logregTFdir is the core function used to train and test the classifiers presented in Figure 2.
+./clust/clusterMassOneSampZ.m is the core function used to identify significant epochs of above-chance confidence ('On states'), corrected for multiple comparisons, as described in Figure 4. 
 
-computePhaseModulationIndex.m and the helper function phaseModulationIndex.m are the core functions used to compute the z-scored color information statistic presented in Figure 3. clusterMassOneSamp.m, clusterMassDependent.m, and the helper function getClust.m are the core functions used compute the significance of this color information statistic using cluster-corrected t-tests.
+./bmm/bmmFit.m and ./bmm/bmmFit_1 return the log likehood and parameters of the best-fitting double- and single-component beta mixture models for data with domain [0, 1], as described in Figure ED5. 
 
-planesDemo.m with the helper function planeAngle.m loads example firing rate data from planesDemo.mat, visualizes population firing rates for each condition in a low-D space, and computes the angle between the upper and lower color planes, as described in Figure 4.
+./ccgs/analyze_ccgs.m is the core function used to compute the firing-rate normalized and jitter corrected CCGs analyzed in Figures 5 and 6. 
